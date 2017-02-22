@@ -1,0 +1,36 @@
+{
+  "name": "planetarium",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "browser-sync": "browser-sync start files src/ --proxy localhost:3000 --no-open --no-ui --offline",
+    "webpack": "./node_modules/.bin/webpack --watch -d",
+    "dev": "yarn start & yarn webpack & yarn browser-sync"
+  },
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "script-loader": "^0.7.0",
+    "serve-favicon": "~2.3.2",
+    "style-loader": "^0.13.1",
+    "stylus-loader": "^2.5.0",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.18.0",
+    "webpack": "^2.2.1"
+  }
+}
